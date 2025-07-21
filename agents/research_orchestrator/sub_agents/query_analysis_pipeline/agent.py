@@ -1,6 +1,5 @@
 from google.adk.agents import SequentialAgent
-from .sub_agents.query_components_analyzer.agent import query_components_analyzer_agent
-from .sub_agents.query_type_analyzer.agent import query_type_analyzer_agent
+from qa_sub_agents.query_type_analyzer.agent import query_type_analyzer_agent
 
 query_analysis_pipeline = SequentialAgent(
     name="query_analysis_pipeline",
